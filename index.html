@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -16,24 +16,77 @@
   </head>
   <body>
     <div class="container">
-      <main>
+      <header>
         <nav>
-          <a href="./about.html">About Page</a>
+          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">AirbnbInSF</a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active"
+                      aria-current="page"
+                      href="#listings"
+                      >Houses</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="https://www.airbnb.com/"
+                      target="_blank"
+                      >Airbnb</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./about.html">About Page</a>
+                  </li>
+                </ul>
+                <label for="sortSelect">Sort by:</label>
+                <select id="sortSelect">
+                  <option value="priceAsc">Price Low to High</option>
+                  <option value="priceDesc">Price High to Low</option>
+                </select>
+                <button id="sortButton" class="btn btn-outline-dark">
+                  Sort
+                </button>
+              </div>
+            </div>
+          </nav>
         </nav>
+      </header>
+
+      <main>
         <h1>Airbnb SF Listings</h1>
 
         <div class="row">
           <div class="col-md-8 col-sm-12">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis
-            porro nemo voluptas. Distinctio aut vel sed sapiente cumque quaerat,
-            harum consequatur perferendis quas, voluptas nisi quae odit culpa
-            necessitatibus repellendus!
+            Are you planning a visit to the stunning city of San Francisco and
+            in search of the perfect Airbnb accommodation that suits your needs?
+            Look no further than "AirbnbInSF." Our website is your go-to
+            resource for discovering a diverse and curated list of Airbnb
+            houses, apartments, and unique stays across the beautiful city of
+            San Francisco.
           </div>
           <div class="col-md-4 col-sm-12">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo totam
-            laudantium reprehenderit beatae nam, eligendi laborum earum quae
-            quibusdam. Quisquam, fuga iste architecto nesciunt itaque
-            consectetur expedita delectus quod quibusdam?
+            <a
+              aria-current="page"
+              href="#listings"
+              class="text-decoration-underline"
+              >👇 Explore More</a
+            >
           </div>
         </div>
 
@@ -41,34 +94,151 @@
           <div id="listings" class="row">
             <div class="listing col-4">
               <div class="card">
-
-                <img
+                <a href="#" class="listing-link">
+                  <img
                     class="card-img-top"
                     src="https://a0.muscache.com/pictures/b7c2a199-4c17-4ba6-b81d-751719d2dac6.jpg"
                     alt="Listing 1 Picture"
                   />
+
+                  <h2 class="listing_name card-title">
+                    Serviced apartment in San Francisco · ★4.87 · 1 bedroom · 2
+                    beds · 1 bath
+                  </h2>
+                  <p class="listing_description">
+                    Our bright garden unit overlooks a lovely backyard area with
+                    fruit trees and native plants. It is an oasis in a big city.
+                    The apartment comfortably fits a couple or small family. It
+                    is located on a cul de sac street that ends at lovely Duboce
+                    Park.<br /><br /><b>The space</b><br />Newly remodeled,
+                    modern, and bright garden unit in historic Victorian home.
+                    <br /><br />New fixtures and finishes.<br />Zero VOC and
+                    non-toxic paint.<br />Organic and fair-trade teas, fresh
+                    local ground coffee.<br />Local art on walls.<br />Sofa bed
+                    and Queen bed are in the same room. More of a petite
+                    apartment with a separate room for dining and kitchen.<br /><br /><b
+                      >Guest access</b
+                    ><br />Full access to patio and backyard (Shared)<br />Beautiful
+                    garden with fruit trees & native plants <br />Washer & dryer
+                    (Shared)<br />Children's toys<br />Charcoal grill<br /><br /><b
+                      >Other things to note</b
+                    ><br />Due to the fact that we have children and a dog, we
+                    are up early 7-8am and their footsteps or paws can be heard
+                  </p>
+
+                  <div class="card-body">
+                    <div class="brief">
+                      <div class="host">
+                        <img
+                          src="https://a0.muscache.com/im/pictures/user/efdad96a-3efc-4bc2-bdc9-f69740a5a818.jpg?aki_policy=profile_small"
+                          alt="Holly's Host Thumbnail"
+                        />
+                        <div class="host_name">Holly</div>
+                      </div>
+                      <div class="price">$187.00</div>
+                      <div class="neighborhood">
+                        San Francisco, California, United States
+                      </div>
+                    </div>
+
+                    <div class="amenities">
+                      <h3>Amenities</h3>
+                      <ul>
+                        <li>Carbon monoxide alarm</li>
+                        <li>Kitchen</li>
+                        <li>Essentials</li>
+                        <li>Shared backyard \u2013 Fully fenced</li>
+                        <li>Crib</li>
+                        <li>Luggage dropoff allowed</li>
+                        <li>Free dryer \u2013 In building</li>
+                        <li>Hot water kettle</li>
+                        <li>TEA TREE TRIPLE TREAT\u2122 conditioner</li>
+                        <li>Gas stove</li>
+                        <li>Wifi</li>
+                        <li>Freezer</li>
+                        <li>Microwave</li>
+                        <li>Hangers</li>
+                        <li>Free washer \u2013 In building</li>
+                        <li>Shared patio or balcony</li>
+                        <li>Pack \u2019n play/Travel crib</li>
+                        <li>Cooking basics</li>
+                        <li>Room-darkening shades</li>
+                        <li>Cleaning products</li>
+                        <li>Toaster</li>
+                        <li>Bathtub</li>
+                        <li>Hot water</li>
+                        <li>Smoke alarm</li>
+                        <li>Hair dryer</li>
+                        <li>Oven</li>
+                        <li>Extra pillows and blankets</li>
+                        <li>Heating</li>
+                        <li>Iron</li>
+                        <li>TV with standard cable</li>
+                        <li>Shower gel</li>
+                        <li>Dishes and silverware</li>
+                        <li>First aid kit</li>
+                        <li>Wine glasses</li>
+                        <li>Coffee maker</li>
+                        <li>Keypad</li>
+                        <li>Everyone Soap body soap</li>
+                        <li>Outdoor furniture</li>
+                        <li>
+                          Children\u2019s books and toys for ages 0-2 years old
+                        </li>
+                        <li>2-5 years old</li>
+                        <li>and 5-10 years old</li>
+                        <li>Coffee</li>
+                        <li>Private entrance</li>
+                        <li>Children\u2019s dinnerware</li>
+                        <li>Cleaning available during stay</li>
+                        <li>
+                          TEA TREE TRIPLE TREAT\u2122 INVIGORATING SHAMPOO
+                          shampoo
+                        </li>
+                        <li>Clothing storage: closet and dresser</li>
+                        <li>Dining table</li>
+                        <li>BBQ grill</li>
+                        <li>Sonos Era Bluetooth sound system</li>
+                        <li>Self check-in</li>
+                        <li>Drying rack for clothing</li>
+                        <li>Refrigerator</li>
+                        <li>Outdoor dining area</li>
+                        <li>Books and reading material</li>
+                      </ul>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.listing -->
+
+            <div class="listing col-4">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="https://a0.muscache.com/pictures/b7c2a199-4c17-4ba6-b81d-751719d2dac6.jpg"
+                  alt="Listing 1 Picture"
+                />
 
                 <h2 class="listing_name card-title">
                   Serviced apartment in San Francisco · ★4.87 · 1 bedroom · 2
                   beds · 1 bath
                 </h2>
 
-
-
                 <div class="card-body">
                   <div class="host">
                     <img
-                    
-                    src="https://a0.muscache.com/im/pictures/user/efdad96a-3efc-4bc2-bdc9-f69740a5a818.jpg?aki_policy=profile_small"
-                    alt="Holly's Host Thumbnail"
-                  />
+                      src="https://a0.muscache.com/im/pictures/user/efdad96a-3efc-4bc2-bdc9-f69740a5a818.jpg?aki_policy=profile_small"
+                      alt="Holly's Host Thumbnail"
+                    />
                     <div class="host_name">Holly</div>
                   </div>
                   <div class="price">$187.00</div>
                   <div class="neighborhood">
                     San Francisco, California, United States
                   </div>
-                  
+
                   <div class="amenities">
                     <h3>Amenities</h3>
                     <ul>
@@ -110,7 +280,9 @@
                       <li>Keypad</li>
                       <li>Everyone Soap body soap</li>
                       <li>Outdoor furniture</li>
-                      <li>Children\u2019s books and toys for ages 0-2 years old</li>
+                      <li>
+                        Children\u2019s books and toys for ages 0-2 years old
+                      </li>
                       <li>2-5 years old</li>
                       <li>and 5-10 years old</li>
                       <li>Coffee</li>
@@ -137,37 +309,32 @@
             </div>
             <!-- /.listing -->
 
-
             <div class="listing col-4">
               <div class="card">
-
                 <img
-                    class="card-img-top"
-                    src="https://a0.muscache.com/pictures/b7c2a199-4c17-4ba6-b81d-751719d2dac6.jpg"
-                    alt="Listing 1 Picture"
-                  />
+                  class="card-img-top"
+                  src="https://a0.muscache.com/pictures/b7c2a199-4c17-4ba6-b81d-751719d2dac6.jpg"
+                  alt="Listing 1 Picture"
+                />
 
                 <h2 class="listing_name card-title">
                   Serviced apartment in San Francisco · ★4.87 · 1 bedroom · 2
                   beds · 1 bath
                 </h2>
 
-
-
                 <div class="card-body">
                   <div class="host">
                     <img
-                    
-                    src="https://a0.muscache.com/im/pictures/user/efdad96a-3efc-4bc2-bdc9-f69740a5a818.jpg?aki_policy=profile_small"
-                    alt="Holly's Host Thumbnail"
-                  />
+                      src="https://a0.muscache.com/im/pictures/user/efdad96a-3efc-4bc2-bdc9-f69740a5a818.jpg?aki_policy=profile_small"
+                      alt="Holly's Host Thumbnail"
+                    />
                     <div class="host_name">Holly</div>
                   </div>
                   <div class="price">$187.00</div>
                   <div class="neighborhood">
                     San Francisco, California, United States
                   </div>
-                  
+
                   <div class="amenities">
                     <h3>Amenities</h3>
                     <ul>
@@ -209,7 +376,9 @@
                       <li>Keypad</li>
                       <li>Everyone Soap body soap</li>
                       <li>Outdoor furniture</li>
-                      <li>Children\u2019s books and toys for ages 0-2 years old</li>
+                      <li>
+                        Children\u2019s books and toys for ages 0-2 years old
+                      </li>
                       <li>2-5 years old</li>
                       <li>and 5-10 years old</li>
                       <li>Coffee</li>
@@ -236,38 +405,32 @@
             </div>
             <!-- /.listing -->
 
-
-
             <div class="listing col-4">
               <div class="card">
-
                 <img
-                    class="card-img-top"
-                    src="https://a0.muscache.com/pictures/b7c2a199-4c17-4ba6-b81d-751719d2dac6.jpg"
-                    alt="Listing 1 Picture"
-                  />
+                  class="card-img-top"
+                  src="https://a0.muscache.com/pictures/b7c2a199-4c17-4ba6-b81d-751719d2dac6.jpg"
+                  alt="Listing 1 Picture"
+                />
 
                 <h2 class="listing_name card-title">
                   Serviced apartment in San Francisco · ★4.87 · 1 bedroom · 2
                   beds · 1 bath
                 </h2>
 
-
-
                 <div class="card-body">
                   <div class="host">
                     <img
-                    
-                    src="https://a0.muscache.com/im/pictures/user/efdad96a-3efc-4bc2-bdc9-f69740a5a818.jpg?aki_policy=profile_small"
-                    alt="Holly's Host Thumbnail"
-                  />
+                      src="https://a0.muscache.com/im/pictures/user/efdad96a-3efc-4bc2-bdc9-f69740a5a818.jpg?aki_policy=profile_small"
+                      alt="Holly's Host Thumbnail"
+                    />
                     <div class="host_name">Holly</div>
                   </div>
                   <div class="price">$187.00</div>
                   <div class="neighborhood">
                     San Francisco, California, United States
                   </div>
-                  
+
                   <div class="amenities">
                     <h3>Amenities</h3>
                     <ul>
@@ -309,7 +472,9 @@
                       <li>Keypad</li>
                       <li>Everyone Soap body soap</li>
                       <li>Outdoor furniture</li>
-                      <li>Children\u2019s books and toys for ages 0-2 years old</li>
+                      <li>
+                        Children\u2019s books and toys for ages 0-2 years old
+                      </li>
                       <li>2-5 years old</li>
                       <li>and 5-10 years old</li>
                       <li>Coffee</li>
@@ -336,38 +501,32 @@
             </div>
             <!-- /.listing -->
 
-
-
             <div class="listing col-4">
               <div class="card">
-
                 <img
-                    class="card-img-top"
-                    src="https://a0.muscache.com/pictures/b7c2a199-4c17-4ba6-b81d-751719d2dac6.jpg"
-                    alt="Listing 1 Picture"
-                  />
+                  class="card-img-top"
+                  src="https://a0.muscache.com/pictures/b7c2a199-4c17-4ba6-b81d-751719d2dac6.jpg"
+                  alt="Listing 1 Picture"
+                />
 
                 <h2 class="listing_name card-title">
                   Serviced apartment in San Francisco · ★4.87 · 1 bedroom · 2
                   beds · 1 bath
                 </h2>
 
-
-
                 <div class="card-body">
                   <div class="host">
                     <img
-                    
-                    src="https://a0.muscache.com/im/pictures/user/efdad96a-3efc-4bc2-bdc9-f69740a5a818.jpg?aki_policy=profile_small"
-                    alt="Holly's Host Thumbnail"
-                  />
+                      src="https://a0.muscache.com/im/pictures/user/efdad96a-3efc-4bc2-bdc9-f69740a5a818.jpg?aki_policy=profile_small"
+                      alt="Holly's Host Thumbnail"
+                    />
                     <div class="host_name">Holly</div>
                   </div>
                   <div class="price">$187.00</div>
                   <div class="neighborhood">
                     San Francisco, California, United States
                   </div>
-                  
+
                   <div class="amenities">
                     <h3>Amenities</h3>
                     <ul>
@@ -409,7 +568,9 @@
                       <li>Keypad</li>
                       <li>Everyone Soap body soap</li>
                       <li>Outdoor furniture</li>
-                      <li>Children\u2019s books and toys for ages 0-2 years old</li>
+                      <li>
+                        Children\u2019s books and toys for ages 0-2 years old
+                      </li>
                       <li>2-5 years old</li>
                       <li>and 5-10 years old</li>
                       <li>Coffee</li>
@@ -436,37 +597,32 @@
             </div>
             <!-- /.listing -->
 
-
             <div class="listing col-4">
               <div class="card">
-
                 <img
-                    class="card-img-top"
-                    src="https://a0.muscache.com/pictures/b7c2a199-4c17-4ba6-b81d-751719d2dac6.jpg"
-                    alt="Listing 1 Picture"
-                  />
+                  class="card-img-top"
+                  src="https://a0.muscache.com/pictures/b7c2a199-4c17-4ba6-b81d-751719d2dac6.jpg"
+                  alt="Listing 1 Picture"
+                />
 
                 <h2 class="listing_name card-title">
                   Serviced apartment in San Francisco · ★4.87 · 1 bedroom · 2
                   beds · 1 bath
                 </h2>
 
-
-
                 <div class="card-body">
                   <div class="host">
                     <img
-                    
-                    src="https://a0.muscache.com/im/pictures/user/efdad96a-3efc-4bc2-bdc9-f69740a5a818.jpg?aki_policy=profile_small"
-                    alt="Holly's Host Thumbnail"
-                  />
+                      src="https://a0.muscache.com/im/pictures/user/efdad96a-3efc-4bc2-bdc9-f69740a5a818.jpg?aki_policy=profile_small"
+                      alt="Holly's Host Thumbnail"
+                    />
                     <div class="host_name">Holly</div>
                   </div>
                   <div class="price">$187.00</div>
                   <div class="neighborhood">
                     San Francisco, California, United States
                   </div>
-                  
+
                   <div class="amenities">
                     <h3>Amenities</h3>
                     <ul>
@@ -508,106 +664,9 @@
                       <li>Keypad</li>
                       <li>Everyone Soap body soap</li>
                       <li>Outdoor furniture</li>
-                      <li>Children\u2019s books and toys for ages 0-2 years old</li>
-                      <li>2-5 years old</li>
-                      <li>and 5-10 years old</li>
-                      <li>Coffee</li>
-                      <li>Private entrance</li>
-                      <li>Children\u2019s dinnerware</li>
-                      <li>Cleaning available during stay</li>
                       <li>
-                        TEA TREE TRIPLE TREAT\u2122 INVIGORATING SHAMPOO shampoo
+                        Children\u2019s books and toys for ages 0-2 years old
                       </li>
-                      <li>Clothing storage: closet and dresser</li>
-                      <li>Dining table</li>
-                      <li>BBQ grill</li>
-                      <li>Sonos Era Bluetooth sound system</li>
-                      <li>Self check-in</li>
-                      <li>Drying rack for clothing</li>
-                      <li>Refrigerator</li>
-                      <li>Outdoor dining area</li>
-                      <li>Books and reading material</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <!-- /.card -->
-            </div>
-            <!-- /.listing -->
-
-
-            <div class="listing col-4">
-              <div class="card">
-
-                <img
-                    class="card-img-top"
-                    src="https://a0.muscache.com/pictures/b7c2a199-4c17-4ba6-b81d-751719d2dac6.jpg"
-                    alt="Listing 1 Picture"
-                  />
-
-                <h2 class="listing_name card-title">
-                  Serviced apartment in San Francisco · ★4.87 · 1 bedroom · 2
-                  beds · 1 bath
-                </h2>
-
-
-
-                <div class="card-body">
-                  <div class="host">
-                    <img
-                    
-                    src="https://a0.muscache.com/im/pictures/user/efdad96a-3efc-4bc2-bdc9-f69740a5a818.jpg?aki_policy=profile_small"
-                    alt="Holly's Host Thumbnail"
-                  />
-                    <div class="host_name">Holly</div>
-                  </div>
-                  <div class="price">$187.00</div>
-                  <div class="neighborhood">
-                    San Francisco, California, United States
-                  </div>
-                  
-                  <div class="amenities">
-                    <h3>Amenities</h3>
-                    <ul>
-                      <li>Carbon monoxide alarm</li>
-                      <li>Kitchen</li>
-                      <li>Essentials</li>
-                      <li>Shared backyard \u2013 Fully fenced</li>
-                      <li>Crib</li>
-                      <li>Luggage dropoff allowed</li>
-                      <li>Free dryer \u2013 In building</li>
-                      <li>Hot water kettle</li>
-                      <li>TEA TREE TRIPLE TREAT\u2122 conditioner</li>
-                      <li>Gas stove</li>
-                      <li>Wifi</li>
-                      <li>Freezer</li>
-                      <li>Microwave</li>
-                      <li>Hangers</li>
-                      <li>Free washer \u2013 In building</li>
-                      <li>Shared patio or balcony</li>
-                      <li>Pack \u2019n play/Travel crib</li>
-                      <li>Cooking basics</li>
-                      <li>Room-darkening shades</li>
-                      <li>Cleaning products</li>
-                      <li>Toaster</li>
-                      <li>Bathtub</li>
-                      <li>Hot water</li>
-                      <li>Smoke alarm</li>
-                      <li>Hair dryer</li>
-                      <li>Oven</li>
-                      <li>Extra pillows and blankets</li>
-                      <li>Heating</li>
-                      <li>Iron</li>
-                      <li>TV with standard cable</li>
-                      <li>Shower gel</li>
-                      <li>Dishes and silverware</li>
-                      <li>First aid kit</li>
-                      <li>Wine glasses</li>
-                      <li>Coffee maker</li>
-                      <li>Keypad</li>
-                      <li>Everyone Soap body soap</li>
-                      <li>Outdoor furniture</li>
-                      <li>Children\u2019s books and toys for ages 0-2 years old</li>
                       <li>2-5 years old</li>
                       <li>and 5-10 years old</li>
                       <li>Coffee</li>
@@ -637,7 +696,10 @@
           <!-- /#listings -->
         </section>
       </main>
-      <footer>Made by John with ❤️</footer>
+
+      <hr />
+
+      <footer>Made by John with Yahui Zhang❤️</footer>
     </div>
     <!-- /.container -->
 
@@ -646,5 +708,7 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+
+    <script src="js/main.js"></script>
   </body>
 </html>
